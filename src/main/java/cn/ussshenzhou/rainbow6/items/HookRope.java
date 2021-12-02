@@ -39,7 +39,7 @@ public class HookRope extends Item {
             PlayerEntity player = (PlayerEntity) entityLiving;
             ItemStack itemstack = player.getHeldItem(player.getActiveHand());
             if (!worldIn.isRemote) {
-                HookRopeEntity hookRopeEntity = new HookRopeEntity(ModEntityTypes.hookRopeEntityType, entityLiving, worldIn);
+                HookRopeEntity hookRopeEntity = new HookRopeEntity(ModEntityTypes.hookRopeEntityType, entityLiving, worldIn, player);
                 hookRopeEntity.setItem(itemstack);
                 hookRopeEntity.shoot(player.getLookVec().x, player.getLookVec().y, player.getLookVec().z, 0.8F, 0.1F);
                 worldIn.addEntity(hookRopeEntity);
