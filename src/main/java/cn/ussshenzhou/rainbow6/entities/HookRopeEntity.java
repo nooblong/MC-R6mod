@@ -65,7 +65,7 @@ public class HookRopeEntity extends ProjectileItemEntity {
 
     @Override
     public void readAdditional(CompoundNBT compound) {
-        super.readAdditional(compound);
+//        super.readAdditional(compound);
         if (compound.contains("playerId")){
             this.dataManager.set(playerId, compound.getString("playerId"));
         }
@@ -73,7 +73,7 @@ public class HookRopeEntity extends ProjectileItemEntity {
 
     @Override
     public void writeAdditional(CompoundNBT compound) {
-        super.writeAdditional(compound);
+//        super.writeAdditional(compound);
         compound.putString("playerId", this.dataManager.get(playerId));
     }
 
