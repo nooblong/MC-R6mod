@@ -103,7 +103,9 @@ public class RegistryHandler {
                 ModArmors.alexHelmet,
                 ModArmors.alexChestplate,
                 ModArmors.alexLeggings,
-                ModArmors.alexBoots
+                ModArmors.alexBoots,
+
+                ModItems.hookrope
         );
     }
 
