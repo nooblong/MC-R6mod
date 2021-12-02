@@ -144,7 +144,9 @@ public class RegistryHandler {
                 ModEntityTypes.proximityAlarmEntityType,
                 ModEntityTypes.smokeGrenadeEntityType,
                 ModEntityTypes.droneEntityType,
-                ModBulletEntityTypes.testbulletEntityType
+                ModBulletEntityTypes.testbulletEntityType,
+
+                ModEntityTypes.hookRopeEntityType
         );
     }
     @SubscribeEvent

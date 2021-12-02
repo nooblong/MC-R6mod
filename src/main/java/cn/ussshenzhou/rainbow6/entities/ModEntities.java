@@ -2,6 +2,7 @@ package cn.ussshenzhou.rainbow6.entities;
 
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.registries.ObjectHolder;
+
 /**
  * @author USS_Shenzhou
  */
@@ -20,4 +21,6 @@ public class ModEntities {
     public static EntityType<DroneEntity> droneEntityEntityType;
     /*@ObjectHolder("rainbow6:gumine")
     public static EntityType<gumineentity> gumine;*/
+    @ObjectHolder("rainbow6:hookrope")
+    public static EntityType<HookRopeEntity> hookRopeEntityEntityType;
 }

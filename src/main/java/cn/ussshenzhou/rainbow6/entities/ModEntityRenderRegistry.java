@@ -4,6 +4,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+
 /**
  * @author USS_Shenzhou
  */
@@ -13,11 +14,13 @@ public class ModEntityRenderRegistry {
     public static void registryEntityRenders(final FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.nitroCellEntityType, NitroCellEntityRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.impactGrenadeEntityType, ImpactGrenadeEntityRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.fragGrenadeEntityType,FragGrenadeEntityRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.fragGrenadeEntityType, FragGrenadeEntityRenderer::new);
         //RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.gumineentitytype,guminerenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.remoteGasGrenadeEntityType,RemoteGasGrenadeRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.proximityAlarmEntityType,ProximityAlarmEntityRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.smokeGrenadeEntityType,SmokeGrenadeEntityRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.droneEntityType,DroneEntityRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.remoteGasGrenadeEntityType, RemoteGasGrenadeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.proximityAlarmEntityType, ProximityAlarmEntityRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.smokeGrenadeEntityType, SmokeGrenadeEntityRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.droneEntityType, DroneEntityRenderer::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.hookRopeEntityType, HookRopeRenderer::new);
     }
 }
