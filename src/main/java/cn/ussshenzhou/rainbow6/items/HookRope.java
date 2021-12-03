@@ -15,6 +15,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
@@ -47,6 +48,14 @@ public class HookRope extends Item {
             player.addStat(Stats.ITEM_USED.get(this));
 
         }
+    }
+
+    public boolean determineBlockInFront(PlayerEntity player, World worldIn){
+//        BlockPos blockPos = player.getPosition();
+//        if (player.getLookVec().getX() < 1){
+//
+//        }
+        return false;
     }
 
     @Override
